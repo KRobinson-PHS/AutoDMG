@@ -7,7 +7,9 @@
 #  Copyright 2013-2016 Per Olofsson, University of Gothenburg. All rights reserved.
 #
 
-from Foundation import *
+from __future__ import unicode_literals
+
+from CocoaWrapper import *
 
 
 class IEDLogLine(NSObject):
@@ -18,7 +20,7 @@ class IEDLogLine(NSObject):
             return None
         
         self._date = NSDate.date()
-        self._message = u""
+        self._message = ""
         self._level = 0
         
         return self

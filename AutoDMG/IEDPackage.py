@@ -7,7 +7,9 @@
 #  Copyright 2013-2016 Per Olofsson, University of Gothenburg. All rights reserved.
 #
 
-from Foundation import *
+from __future__ import unicode_literals
+
+from CocoaWrapper import *
 
 
 class IEDPackage(NSObject):

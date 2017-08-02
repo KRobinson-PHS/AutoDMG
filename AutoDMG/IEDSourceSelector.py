@@ -7,8 +7,9 @@
 #  Copyright 2013-2016 Per Olofsson, University of Gothenburg. All rights reserved.
 #
 
-from Foundation import *
-from AppKit import *
+from __future__ import unicode_literals
+
+from CocoaWrapper import *
 from objc import IBAction, IBOutlet, classAddMethods
 
 import os.path
